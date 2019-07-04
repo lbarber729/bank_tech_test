@@ -5,3 +5,7 @@ function Account() {
 Account.prototype.credit = function (amount) {
   this._balance += amount
 };
+
+Account.prototype.debit = function (amount) {
+  this._balance -= amount
+};

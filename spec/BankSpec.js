@@ -14,4 +14,10 @@ describe('Account', function() {
     account.credit(500);
     expect(account._balance).toBe(500);
   })
+
+  it('can be debited an amount', function() {
+    account.credit(700);
+    account.debit(100);
+    expect(account._balance).toBe(600);
+  })
 })
