@@ -23,7 +23,6 @@ date || credit || debit || balance
 ```
 git clone https://github.com/lbarber729/bank_tech_test.git
 ```
-- Run ```bundle install```
 - Use through the command line, run
 ```
 node
@@ -87,4 +86,4 @@ Account | Statement
 
 
 ## Status
--
+- All tests are passing and all all user stories have been met.

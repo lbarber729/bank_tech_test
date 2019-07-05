@@ -20,4 +20,17 @@ describe('Account', function() {
     account.debit(100);
     expect(account._balance).toBe(600);
   })
+
+  it('can display the current balance', function() {
+    account.credit(300);
+    expect(account.balance()).toBe('Current Balance: £300')
+  })
+
+  it('prints out all transactions', function() {
+    account.credit(100);
+    account.debit(50);
+    expect(account.statement()).toBe(
+    'date || credit || debt || balance\n05/07/2019 || 100 ||  || 100\n05/07/2019 ||  || 50 || 50'
+    );
+  })
 })
